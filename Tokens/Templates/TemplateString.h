@@ -1,8 +1,27 @@
-//
-// Created by alexe on 24.06.2024.
-//
+#pragma once
 
-#ifndef LOGANONIMIZER_TEMPLATESTRING_H
-#define LOGANONIMIZER_TEMPLATESTRING_H
+#include "../../header.h"
 
-#endif //LOGANONIMIZER_TEMPLATESTRING_H
+std::string makeString(std::string &&templ, std::map<std::string, std::string> vars) {
+    bool isVar = false;
+    std::string varName;
+    std::string res;
+    for (char c: templ) {
+        if (c == '}') {
+            isVar = false;
+            res += vars[varName];
+            varName.clear();
+            continue;
+        }
+        if (isVar) {
+            varName += c;
+            continue;
+        }
+        if (c == '{') {
+            isVar = true;
+            continue;
+        }
+        res.push_back(c);
+    }
+    return res;
+}

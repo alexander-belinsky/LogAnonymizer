@@ -1,21 +1,26 @@
-#include <utility>
-
 #pragma once
 
-class TokenManager {
+#include "../header.h"
+#include "../Config/ConfigManager.h"
+
+class TokenChecker {
 
 public:
-    explicit TokenManager(std::string configPath): configPath(std::move(configPath)) {}
+    explicit TokenChecker (ConfigManager &config): config(config) {}
 
-    bool checkWord(const std::string &word) {
+
+    void connectDB(std::string &path, std::string &tableName) {
+
+    }
+
+    virtual bool checkWord(const std::string &word) {
         return false;
     }
 
-    bool checkStack(std::vector<std::string> &stack) {
-        return false;
+    virtual void checkStack(std::vector<std::string> &stack) {
     }
 
-private:
-    std::string configPath;
+protected:
+    ConfigManager &config;
 };
 

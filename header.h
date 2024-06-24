@@ -1,8 +1,10 @@
-//
-// Created by alexe on 22.06.2024.
-//
+#pragma once
 
-#ifndef LOGANONIMIZER_HEADER_H
-#define LOGANONIMIZER_HEADER_H
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <string>
+#include <sstream>
+#include <map>
 
-#endif //LOGANONIMIZER_HEADER_H
+#include "libs/sqlite/sqlite3.h"

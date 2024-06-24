@@ -1,8 +1,13 @@
-//
-// Created by alexe on 22.06.2024.
-//
+#pragma once
 
-#ifndef LOGANONIMIZER_LOG_ANONIMIZER_H
-#define LOGANONIMIZER_LOG_ANONIMIZER_H
+#include "header.h"
 
-#endif //LOGANONIMIZER_LOG_ANONIMIZER_H
+#include "Tokens/Templates/TemplateString.h"
+#include "Tokens/TokenChecker.h"
+#include "Tokens/IPToken.h"
+
+#include "DB/DataBase.h"
+
+#include "Config/ConfigManager.h"
+
+#include "MainManager.h"
