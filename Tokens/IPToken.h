@@ -1,0 +1,8 @@
+//
+// Created by alexe on 22.06.2024.
+//
+
+#ifndef LOGANONIMIZER_IPTOKEN_H
+#define LOGANONIMIZER_IPTOKEN_H
+
+#endif //LOGANONIMIZER_IPTOKEN_H

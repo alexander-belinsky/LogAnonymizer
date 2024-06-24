@@ -1,0 +1,8 @@
+//
+// Created by alexe on 22.06.2024.
+//
+
+#ifndef LOGANONIMIZER_DATABASE_H
+#define LOGANONIMIZER_DATABASE_H
+
+#endif //LOGANONIMIZER_DATABASE_H

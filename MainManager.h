@@ -1,0 +1,8 @@
+//
+// Created by alexe on 23.06.2024.
+//
+
+#ifndef LOGANONIMIZER_MAINMANAGER_H
+#define LOGANONIMIZER_MAINMANAGER_H
+
+#endif //LOGANONIMIZER_MAINMANAGER_H
