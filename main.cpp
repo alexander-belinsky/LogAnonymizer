@@ -1,6 +1,9 @@
 #include <iostream>
+#include "log_anonimizer.h"
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    MainManager mainManager;
+    mainManager.anonymize();
     return 0;
 }
